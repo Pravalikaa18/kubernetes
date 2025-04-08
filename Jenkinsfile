@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds') // You must create this in Jenkins
+        DOCKERHUB_CREDENTIALS = credentials('8b36b4c0-735c-4c23-9d1c-df2e9be15024') // You must create this in Jenkins
         KUBECONFIG_CREDENTIALS = credentials('kubeconfig') // You must create this in Jenkins
     }
     stages {
