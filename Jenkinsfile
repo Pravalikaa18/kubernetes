@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds') // You must create this in Jenkins
-        KUBECONFIG_CREDENTIALS = credentials('kubeconfig-secret') // You must create this in Jenkins
+        KUBECONFIG_CREDENTIALS = credentials('kubeconfig') // You must create this in Jenkins
     }
     stages {
         stage('Clone Repository') {
