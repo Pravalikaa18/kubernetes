@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Pravalikaa18/kuberenetes.git'
+                git branch: 'main', url: 'https://github.com/Pravalikaa18/kubernetes.git'
             }
         }
         stage('Build Docker Image') {
