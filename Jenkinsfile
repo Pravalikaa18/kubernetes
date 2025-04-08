@@ -1,7 +1,8 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('98897e03-c137-4438-8da4-dd1f33b63fba') // You must create this in Jenkins
+        DOCKERHUB_CREDENTIALS = credentials('98897e03-c137-4438-8da4-dd1f33b63fba')
+          KUBECONFIG = "/var/lib/jenkins/.minikube/profiles/minikube/config"// You must create this in Jenkins
        
     }
     stages {
